@@ -101,5 +101,8 @@ Radiografia_Socioeconomica_CASEN_2022/
 
 This analysis provides actionable insights that support better-informed social policy decisions, enhancing socioeconomic well-being in Chile.
 
+## 📬 Connect with Me
 
-**Developed by Fabrizio Mora**
+📩 **Email:** [fabrizio.morasolis@gmail.com](mailto:fabrizio.morasolis@gmail.com)
+
+🔗 **LinkedIn:** [Fabrizio Mora Solis](https://www.linkedin.com/in/fabrizio-mora-solis/)
