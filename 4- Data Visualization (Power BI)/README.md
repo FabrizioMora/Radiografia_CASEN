@@ -33,4 +33,4 @@ Snapshot preview of the final dashboard design.
 • Housing Tenure Distribution
 ```
 ### 🔜 Next Step: 
-Proceed to ```5- Putting it All Together``` 
+Proceed to **[5- Putting it All Together](../5-%20Putting%20it%20All%20Together/)**
