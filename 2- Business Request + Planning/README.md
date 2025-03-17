@@ -60,4 +60,4 @@ By delivering this solution, the client will:
 
 ### ✅ Next Step
 
-Proceed to ```3- Cleansing and Transformation``` 
+Proceed to **[3- Cleansing and Transformation](../3-%20Cleansing%20and%20Transformation/)**
