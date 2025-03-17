@@ -1,0 +1,39 @@
+# Importar librerías
+from google.colab import drive
+import pandas as pd
+import os
+from google.colab import files
+
+# Montar Google Drive
+drive.mount('/content/drive')
+
+# Ruta del archivo original en Google Drive
+csv_path = "/content/drive/MyDrive/Dataset STATA/casen_2022.csv"
+
+# Definir las columnas necesarias
+columnas_necesarias = [
+    'id_vivienda', 'folio', 'id_persona', 'region', 'area',
+    'edad', 'sexo', 'yoprcor', 'ten_viv', 'activ', 'pobreza'
+]
+
+# Cargar el archivo con solo las columnas necesarias
+df = pd.read_csv(csv_path, usecols=columnas_necesarias, delimiter=',', encoding='utf-8')
+
+# Convertir las columnas a sus tipos de datos correctos
+columnas_enteros = ['id_vivienda', 'folio', 'id_persona', 'region', 'area', 'edad', 'sexo', 'ten_viv', 'activ', 'pobreza']
+df[columnas_enteros] = df[columnas_enteros].apply(pd.to_numeric, errors='coerce').astype(pd.Int64Dtype())
+
+# Convertir 'yoprcor' a número entero sin decimales
+df['yoprcor'] = pd.to_numeric(df['yoprcor'], errors='coerce').fillna(pd.NA).astype(pd.Int64Dtype())
+
+# Guardar el CSV corregido sin "NULL" como texto, sino valores nulos reales
+csv_corregido_path = "/content/casen_corregido.csv"
+df.to_csv(csv_corregido_path, index=False, sep=',', decimal='.', na_rep='')
+
+print("CSV corregido guardado en:", csv_corregido_path)
+
+# Verificar que el archivo se guardó correctamente
+os.listdir("/content/")
+
+# Descargar el archivo filtrado
+files.download(csv_corregido_path)
