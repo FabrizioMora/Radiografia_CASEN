@@ -120,6 +120,6 @@ casen_2022_filtered.csv
 • Filtered and structured data ready for visualization.
 
 🔜 **Next Step:** 
-Proceed to ```4- Data Visualization (Power BI)``` 
+Proceed to **[4- Data Visualization (Power BI)](../4-%20Data%20Visualization%20(Power%20BI)/)**
 
 
