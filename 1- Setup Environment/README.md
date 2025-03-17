@@ -67,14 +67,9 @@ A Python script was used to filter necessary columns and correct data types for 
 
 • **Libraries:** Pandas
 
-• **Output:**     
-```
-casen_2022_filtered.csv
-```
+• **Output:**     **[casen_2022_filtered.csv](../3-%20Cleansing%20and%20Transformation/Processed_CSVs/casen_2022_filtered.csv)**
 
-(See detailed script in 
-3- ```Cleansing and Transformation```
-).
+(See detailed script in **[3- Cleansing and Transformation](../3-%20Cleansing%20and%20Transformation/)**).
 
 ### 📈 Power BI Visualization Setup
 
